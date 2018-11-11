@@ -1,0 +1,12 @@
+.array-item {
+  z-index: -10;
+
+  &:nth-child(odd) {
+    background-color: #222;
+    color: #eee;
+  }
+
+  &:nth-child(even) {
+    background-color: rgb(162, 252, 163);
+  }
+}

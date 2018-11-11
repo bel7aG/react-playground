@@ -29,3 +29,11 @@ button {
   border: none; }
   button:focus {
     outline: none; }
+
+.array-item {
+  z-index: -10; }
+  .array-item:nth-child(odd) {
+    background-color: #222;
+    color: #eee; }
+  .array-item:nth-child(even) {
+    background-color: #a2fca3; }

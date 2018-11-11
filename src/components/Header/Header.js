@@ -16,7 +16,7 @@ const Header = ({ me }) => (
         </li>
       </ul>
     </nav>
-    {me.map((item) => <p>{item}</p>)}
+    {me.map((item, index) => <span className="array-item" key={index.toString()}>{item}</span>)}
   </header>
 );
 
