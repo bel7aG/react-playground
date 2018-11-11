@@ -12,7 +12,7 @@ export default class AppRouter extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
-              <Route comp={NotFound} />
+              <Route component={NotFound} />
             </Switch>
           </Main>
         </React.Fragment>
