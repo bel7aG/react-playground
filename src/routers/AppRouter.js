@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { Header, Main, Home, About, NotFound } from '../components';
+import { Header, Main, Home, About, React162, NotFound } from '../components';
 
 export default class AppRouter extends Component {
 
   state = {
-    test: [1, 2, 3, "Belhassen", "www.github.com/bel7aG"],
+    me: [1, 2, 3, "Belhassen", "www.github.com/bel7aG"],
     mainClassName: "main-state",
     isOkey: true
   };
@@ -22,13 +22,11 @@ export default class AppRouter extends Component {
     }))
   }
 
-
   onMouseOutMain = () => {
     this.setState(() => ({
       mainClassName: "main-out"
     }))
   }
-
 
   render() {
     return (
@@ -36,6 +34,7 @@ export default class AppRouter extends Component {
         <React.Fragment>
           <Header
             headerToggleBackgroundColor={this.headerToggleBackgroundColor}
+            me={this.state.me}
           />
           <Main
             className={this.state.mainClassName}
@@ -45,6 +44,7 @@ export default class AppRouter extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
+              <Route exact path="/react-16-2" component={React162} />
               <Route component={NotFound} />
             </Switch>
           </Main>
