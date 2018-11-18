@@ -1,8 +1,13 @@
 import React from 'react'
+import { Navigation } from '../'
+
+const pages = [
+  {title: `Hello World`, url: `/HelloWorld`}
+]
 
 const App = () => (
   <div className="container">
-    Belhassen Gharsallah
+    <Navigation pages={pages}/>
   </div>
 )
 
